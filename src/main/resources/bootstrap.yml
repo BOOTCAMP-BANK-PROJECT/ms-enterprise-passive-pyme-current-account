@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ms-enterprise-passive-pyme-current-account
+  cloud:
+    config:
+      label: main
+      uri: http://localhost:8081
+      username: root
+      password: 1234
+
+# Swagger openapi.docs custom path
+springdoc:
+  api-docs:
+    path: enterprise/passive/pyme_current_account/docs
+    enabled: true
+  swagger-ui:
+    path: enterprise/passive/pyme_current_account/docs/ui
+    enabled: true
+  show-actuator: true
+
+  # Tomcat Server Port
+  server:
+    port: 3001
